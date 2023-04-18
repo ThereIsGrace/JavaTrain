@@ -14,6 +14,6 @@ public class Measure {
 				count++;
 			}
 		}
-		System.out.println("\n의 약수는 " + count + "개입니다.");   //개수를 표시
 	}
 }
+	
