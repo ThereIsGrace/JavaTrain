@@ -2,6 +2,7 @@ package t20230502.test03;
 
 public class ExIdTester {
 	public static void main(String[] args) {
+<<<<<<< Updated upstream
 		ExId a = new ExId();   // 식별 번호 1번
 		ExId b = new ExId();   // 식별 번호 2번
 		ExId c = new ExId();   // 식별 번호 3번
@@ -9,6 +10,15 @@ public class ExIdTester {
 		ExId d = new ExId();   // 식별 번호 7번
 		ExId e = new ExId();   // 식별 번호 11번
 		ExId f = new ExId();   // 식별 번호 15번
+=======
+		ExId a = new ExId();         //식별 번호 1번
+		ExId b = new ExId();         //식별 번호 2번
+		ExId c = new ExId();         //식별 번호 3번
+		ExId.setStep(4);
+		ExId d = new ExId();         //식별 번호 7번
+		ExId e = new ExId();         //식별 번호 11번
+		ExId f = new ExId();         //식별 번호 15번
+>>>>>>> Stashed changes
 		
 		System.out.println("a의 식별 번호:" + a.getId());
 		System.out.println("b의 식별 번호:" + b.getId());

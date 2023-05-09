@@ -1,4 +1,5 @@
 package t20230502.test03;
+<<<<<<< Updated upstream
 // 일련 번호 클래스(증가치를 변경할 수 있다)
 public class ExId {
 	static int counter = 0;        // 몇 번까지 식별 번호를 부여했는가
@@ -8,6 +9,17 @@ public class ExId {
 	//--- 생성자 ---
 	public ExId() {
 		id = counter += step;     // 식별 번호
+=======
+//일련 번호 클래스(증가치를 변경할 수 있다)
+public class ExId {
+	static int counter = 0;          //몇 번까지 식별 부여를 부여했는가
+	private static int step = 1;     //증가치
+	private int id;                  //식별 번호
+	
+	//--- 생성자 ---//
+	public ExId() {
+		id = counter += step;        //식별 번호
+>>>>>>> Stashed changes
 	}
 	
 	//--- 식별 번호 가져오기 ---//
@@ -22,7 +34,11 @@ public class ExId {
 	
 	//--- 증가치 설정 ---//
 	public static int setStep(int s) {
+<<<<<<< Updated upstream
 		step = (s >= 1)?s:1;
+=======
+		step = (s >= 1) ? s: 1;
+>>>>>>> Stashed changes
 		return step;
 	}
 	
@@ -30,5 +46,8 @@ public class ExId {
 	public static int getMaxId() {
 		return counter;
 	}
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 }
