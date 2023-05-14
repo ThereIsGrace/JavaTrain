@@ -1,5 +1,5 @@
 package t20230502.test07;
-
+//날짜 클래스 Day (Ver.2)
 import java.util.GregorianCalendar;
 import static java.util.GregorianCalendar.*;
 public class Day {
@@ -110,7 +110,7 @@ public class Day {
 	//--- 문자열 표현 반환 ---//
 	public String toString() {
 		String[] wd = {"일","월","화","수","목","금","토"};
-		return String.format("%04년%02월%02일(%s)", 
+		return String.format("%04d년%02d월%02d일(%s)", 
 				year, month, date, wd[dayOfWeek()]);
 	}
 	//--- 연내 경과 일수 ---//
